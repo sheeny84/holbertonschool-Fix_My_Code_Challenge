@@ -44,7 +44,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	else
 	{
-		// set prev next pointer to the current next
 		(*head)->prev->next = (*head)->next;
 		free(*head);
 		if ((*head)->next)
